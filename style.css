@@ -1,0 +1,79 @@
+body {
+    background-image: url(https://previews.123rf.com/images/1000pixels/1000pixels1803/1000pixels180300238/98203904-blackboard-inscribed-with-scientific-formulas-and-calculations-in-physics-and-mathematics-can-illust.jpg);
+    color: #111;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+}
+
+h2{
+    text-align: right;
+    margin: 0;
+}
+
+h3{
+    text-align: right;
+    margin: 0;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+input{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem; 
+    outline: none;  
+    margin-bottom: 10px;
+}
+
+td{
+    text-align: center;
+}
+
+#container{
+    background-color:rgba(200, 200, 200, 0.9);
+    width: 280px;
+    margin: 50px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#innerContainer{
+    padding: 10px;
+}
+
+#tableContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#inputBlock{
+    align-self: center;
+    justify-content: center;
+}
+
+#negative{
+    display: none;
+}
+
+#styleSwitch{
+    height: 30px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    border: none;
+    background-color: #666;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+#styleSwitch:hover{
+    background-color: steelblue;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25cd1a2728.js" crossorigin="anonymous"></script>
+    <link id="style" rel="stylesheet" href="style_round.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div id="container">
+        <div id="innerContainer">
+            <h3 id="operationDisplay">0</h3>
+            
+            <h2>= <span id="answerDisplay">0</span></h2>
+            
+            <input type="text" autofocus onblur="this.focus()">
+            <div id="tableContainer">
+                <table>
+                    <tr>
+                        <td><button id="ce">CE</button></td>
+                        <td><button id="c">C</button></td>
+                        <td><button id="back"><i class="fas fa-backspace"></i></button></td>
+                        <td><button id="devide">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="7">7</button></td>
+                        <td><button id="8">8</button></td>
+                        <td><button id="9">9</button></td>
+                        <td><button id="times">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="4">4</button></td>
+                        <td><button id="5">5</button></td>
+                        <td><button id="6">6</button></td>
+                        <td><button id="minus">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="1">1</button></td>
+                        <td><button id="2">2</button></td>
+                        <td><button id="3">3</button></td>
+                        <td><button id="plus">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="negative">+/-</button></td>
+                        <td><button id="0">0</button></td>
+                        <td><button id="point">.</button></td>
+                        <td><button id="equal">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <button id="styleSwitch">Classic Style</button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
