@@ -1,12 +1,12 @@
-var input = document.querySelector("input");
-var answerDisplay = document.querySelector("#answerDisplay");
-var operationDisplay = document.querySelector("#operationDisplay");
-var answer;
-var lastOp = 0;
-var style = document.querySelector("#style");
-var styleSwitch = document.querySelector("#styleSwitch");
+const input = document.querySelector("input");
+const answerDisplay = document.querySelector("#answerDisplay");
+const operationDisplay = document.querySelector("#operationDisplay");
+let answer;
+let lastOp = 0;
+const style = document.querySelector("#style");
+const styleSwitch = document.querySelector("#styleSwitch");
 
-var possible = [
+const possible = [
     //keycodes of all the allowed characters
     "8",
     "48",
@@ -66,37 +66,37 @@ styleSwitch.addEventListener("click", function(){
 
 
 //setup Buttons
-var one = document.getElementById("1").addEventListener("click", function(){
+const one = document.getElementById("1").addEventListener("click", function(){
     input.value += "1";
 });
-var two = document.getElementById("2").addEventListener("click", function(){
+const two = document.getElementById("2").addEventListener("click", function(){
     input.value += "2";
 });
-var three = document.getElementById("3").addEventListener("click", function(){
+const three = document.getElementById("3").addEventListener("click", function(){
     input.value += "3";
 });
-var four = document.getElementById("4").addEventListener("click", function(){
+const four = document.getElementById("4").addEventListener("click", function(){
     input.value += "4";
 });
-var five = document.getElementById("5").addEventListener("click", function(){
+const five = document.getElementById("5").addEventListener("click", function(){
     input.value += "5";
 });
-var six = document.getElementById("6").addEventListener("click", function(){
+const six = document.getElementById("6").addEventListener("click", function(){
     input.value += "6";
 });
-var seven = document.getElementById("7").addEventListener("click", function(){
+const seven = document.getElementById("7").addEventListener("click", function(){
     input.value += "7";
 });
-var eight = document.getElementById("8").addEventListener("click", function(){
+const eight = document.getElementById("8").addEventListener("click", function(){
     input.value += "8";
 });
-var nine = document.getElementById("9").addEventListener("click", function(){
+const nine = document.getElementById("9").addEventListener("click", function(){
     input.value += "9";
 });
-var zero = document.getElementById("0").addEventListener("click", function(){
+const zero = document.getElementById("0").addEventListener("click", function(){
     input.value += "0";
 });
-var point = document.getElementById("point").addEventListener("click", function(){
+const point = document.getElementById("point").addEventListener("click", function(){
     input.value += ".";
 });
 // var negative = document.getElementById("negative").addEventListener("click", function(){
@@ -108,29 +108,29 @@ var point = document.getElementById("point").addEventListener("click", function(
 //         }
 //     }   
 // });
-var plus = document.getElementById("plus").addEventListener("click", function(){
+const plus = document.getElementById("plus").addEventListener("click", function(){
     input.value += "+";
 });
-var minus = document.getElementById("minus").addEventListener("click", function(){
+const minus = document.getElementById("minus").addEventListener("click", function(){
     input.value += "-";
 });
-var times = document.getElementById("times").addEventListener("click", function(){
+const times = document.getElementById("times").addEventListener("click", function(){
     input.value += "*";
 });
-var devide = document.getElementById("devide").addEventListener("click", function(){
+const devide = document.getElementById("devide").addEventListener("click", function(){
     input.value += "/";
 });
-var equal = document.getElementById("equal").addEventListener("click", calculate);
+const equal = document.getElementById("equal").addEventListener("click", calculate);
 
-var ce = document.getElementById("ce").addEventListener("click", function(){
+const ce = document.getElementById("ce").addEventListener("click", function(){
     input.value = "";
 });
-var c = document.getElementById("c").addEventListener("click", function(){
+const c = document.getElementById("c").addEventListener("click", function(){
     input.value = "";
     answerDisplay.textContent = "0";
     operationDisplay.textContent = "0";
 });
-var back = document.getElementById("back").addEventListener("click", function(){
+const back = document.getElementById("back").addEventListener("click", function(){
     input.value = input.value.substr(0, input.value.length-1);
 });
 
@@ -180,6 +180,3 @@ function calculate(){
     //clear the input
     input.value = "";  
 }
-
-
-
